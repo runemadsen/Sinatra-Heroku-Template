@@ -1,6 +1,9 @@
 source :rubygems
 
 gem 'sinatra'
+
+require 'sass'
+
 gem 'dm-core'
 gem 'dm-migrations'
 

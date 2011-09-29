@@ -1,6 +1,6 @@
 # Sinatra-Heroku Template
 
-#### _A template to quickly get [Sinatra](http://sinatrarb.com) apps running and served up on [Heroku](http://heroku.com). Forked from [Rune Madsen](https://github.com/runemadsen/Sinatra-Heroku-Template)._
+#### _A template to quickly get [Sinatra](http://sinatrarb.com) apps running and served up on [Heroku](http://heroku.com)._
 
 ## Installation
 

@@ -1,2 +1,3 @@
-require 'application.rb'
-run Application
+require 'rubygems'
+require 'application'
+run Sinatra::Application

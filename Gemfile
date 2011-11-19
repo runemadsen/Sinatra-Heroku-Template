@@ -2,7 +2,7 @@ source :rubygems
 
 gem 'sinatra'
 
-require 'sass'
+gem 'sass'
 
 gem 'dm-core'
 gem 'dm-migrations'

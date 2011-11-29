@@ -4,16 +4,17 @@
 
 ## Installation
 
-First be sure to have Ruby installed. Then get the Sinatra and Heroku gems
+First be sure to have Ruby installed. Then get the Sinatra, Bundler and Heroku gems
 
     $ gem install sinatra
+    $ gem install bundler
     $ gem install heroku
 
 Download this template and `cd` to it.
 
 To run the app locally, bundle the gems and then run with rackup.
 
-    $ bundle
+    $ bundle --without production
     $ bundle exec rackup
 
 Your app should then be running at `http://localhost:9292`.

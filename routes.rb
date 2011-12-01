@@ -1,0 +1,16 @@
+get '/' do
+  erb :front
+end
+
+# Use Sass with `views/style.scss` as your stylesheet
+# To use, delete `public/stylehseets/style.css`
+# get '/stylesheets/style.css' do
+  # scss :style
+# end
+
+#   404
+#---------------------------------------
+
+not_found do
+  erb :notfound
+end

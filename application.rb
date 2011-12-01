@@ -1,13 +1,11 @@
 require 'bundler'
 Bundler.require
-
-# DataMapper.auto_upgrade!
+require './helpers'
+require './routes'
 
 configure do |c|
-  enable :sessions
+  # Turn on sessions. Makes the `session` hash available to routes and views.
+  # enable :sessions
   set :root, File.dirname(__FILE__)
-  set :views, Proc.new{ File.join(root, "app/views")}
-  set :scss, :style => :compact
+  set :views, Proc.new{ File.join(root, "views")}
 end
-
-Dir['./app/*/*.rb'].each {|file| require file}

@@ -12,6 +12,26 @@ new Sinatra application.
 
 Tested on Mac OS X Lion with rbenv and Ruby 1.9.3-p0
 
+## Not a Framework
+
+This is not a framework. It's a bunch of mostly-empty files to organize the parts of 
+whatever Sinatra app you decide to build.
+
+## Do you want to use this?
+
+That's a good question. I want to use it, which is why it's here on Github.
+
+**This template will not help you with:**
+- Understanding Ruby
+- Understanding how Sinatra works
+- Understanding how Heroku works
+
+**This template will:**
+- Reduce the time it takes to start a project by about a minute
+- Give a rough guide on how to organize your code
+- Already jQuery, Underscore and Backbone downloaded.
+- Include a few helpful CSS templates, all of which have links to the original authors.
+
 ## Installation
 
 ### Run the script

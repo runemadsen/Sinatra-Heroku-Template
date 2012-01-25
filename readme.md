@@ -23,12 +23,6 @@ Your app should then be running at `http://localhost:9292`.
 
 ## Heroku App Creation
 
-Heroku relies on [Git](http://devcenter.heroku.com/articles/git) for deploying apps so initialize git for the app.
-
-    $ git init
-    $ git add .
-    $ git commit -m "Initial Commit"
-
 To create a Heroku app, first be sure you are [signed up](https://api.heroku.com/signup). Then type the following in Terminal while inside of the project directory.
 
     $ heroku create NAME_OF_YOUR_APP

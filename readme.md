@@ -4,14 +4,14 @@
 
 ## Installation
 
-  mkdir NAME_OF_YOUR_APP
-  cd NAME_OF_YOUR_APP
-  curl -L https://github.com/stevenklise/Sinatra-Heroku-Template/raw/master/lib/install.sh | sh
+    mkdir NAME_OF_YOUR_APP
+    cd NAME_OF_YOUR_APP
+    curl -L https://github.com/stevenklise/Sinatra-Heroku-Template/raw/master/lib/install.sh | sh
 
 Be sure you have Bundler installed and then create a bundle.
 
-  gem install bundler
-  bundle install --without production
+    gem install bundler
+    bundle install --without production
 
 You may need do these commands with `sudo`.
 

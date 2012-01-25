@@ -4,7 +4,7 @@ echo "\033[0;34mCloning Sinatra-Heroku-Template...\033[0m"
 echo "\033[0;34mRemoving Git Repo...\033[0m"
 rm -r .git/
 echo "\033[0;34mRemoving install.sh...\033[0m"
-rm install.sh
+rm ./lib/install.sh
 
 echo "\033[0;34mCreating new git repository...\033[0m"
 /usr/bin/env git init

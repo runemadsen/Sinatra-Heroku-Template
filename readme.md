@@ -8,6 +8,8 @@ First be sure to have Ruby installed. Then download this template, `cd` to it, a
 
     $ bundle install
 
+THen install postgres.app and follow the instructions to set up a database for the app.
+
 To run the app locally, install Shotgun and run
 
 		$ gem install shotgun

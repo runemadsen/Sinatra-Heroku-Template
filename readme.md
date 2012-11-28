@@ -39,7 +39,7 @@ Once this returns successfully, push your app to Heroku.
 If you're using DataMapper with a database, you will need to add a database. Run these commands from the root of your project:
 
 	$ heroku addons:add heroku-postgresql:dev
-	$ heroku pg:promote HEROKU_POSTGRESQL_RED_URL
+	$ heroku pg:promote [put whatever your big POSTGRES name is here]
 
 Now you've created your database. Now you need to update the tables:
 

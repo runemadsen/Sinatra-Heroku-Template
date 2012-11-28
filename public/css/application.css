@@ -4,28 +4,4 @@ body {
 	font-size: 14px;
 	color: #323232;
 	padding: 50px;
-	background-image: url("/images/gray_jean.png");
 }
-
-h1 {
-	font-size: 40px;
-	font-weight: bold;
-}
-
-label {
-	display: block;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-
-input[type="text"], input[type="file"] {
-	padding: 5px;
-	border: none;
-	margin-bottom: 10px;
-	display: block;
-}
-
-input[type="text"] {
-	border: 1px solid #cccccc;
-}
-

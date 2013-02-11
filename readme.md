@@ -99,3 +99,12 @@ Once this returns successfully, push your app to Heroku.
     git push heroku master
 
 BOOM. Web 3.0beta
+
+### TIMEZONES
+
+Heroku's servers have different timestamps than your time zone probably. To have Heroku use your 
+local time zone for timestamps on datamodels find your timezone on this chart: 
+http://en.wikipedia.org/wiki/List_of_tz_database_time_zones and then run the following in 
+Terminal:
+
+    heroku config:add TZ="____YOURTIMEZONE____"

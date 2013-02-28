@@ -1,0 +1,8 @@
+<h1>Things!</h1>
+<ul>
+<% @things.each do |thing| %>
+  <li><a href="/things/<%= thing.id %>"><%= thing.title %></a> (<a href="/things/<%= thing.id %>/delete">delete</a>)</li>
+<% end %>
+</ul>
+
+<a href="/things/new">New Thing</a>

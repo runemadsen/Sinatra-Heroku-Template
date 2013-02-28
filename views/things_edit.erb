@@ -1,0 +1,8 @@
+<form action="/things/<%= @thing.id %>/update" method="POST">
+  <p>Title: <input type="text" name="title" value="<%= @thing.title %>"></p>
+
+  <p>Description:</p>
+  <textarea name="description"><%= @thing.description %></textarea>
+
+  <p><input type="submit"></p>
+</form>

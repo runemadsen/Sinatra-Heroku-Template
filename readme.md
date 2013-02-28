@@ -1,62 +1,17 @@
 # Sinatra-Heroku Template
 
-I've made a lot of Sinatra apps and am tired of creating all the files and stylesheet
-templates and Javascript libraries I frequently used. So I've forked this template from
-[runemadsen](https://github.com/runemadsen) and created a script to speed up starting a
-new Sinatra application.
+## Getting this Working
 
-## Prerequisites
+1. Download this repository and unzip.
 
-- Git
-- Ruby
+2. Install [RVM](https://rvm.io/rvm/install/), it's the best way to install
+Ruby on your computer and prevent anything you do with Ruby from messing up
+your system.
 
-Tested on Mac OS X Lion with rbenv and Ruby 1.9.3-p0
+3. When you have installed RVM, open Terminal and direct the terminal to where
+you downloaded this repository, like so:
 
-## Not a Framework
-
-This is not a framework. It's a bunch of mostly-empty files to organize the parts of 
-whatever Sinatra app you decide to build.
-
-## Do you want to use this?
-
-That's a good question. I want to use it, which is why it's here on Github.
-
-**This template will not help you with:**
-
-- Understanding Ruby
-- Understanding how Sinatra works
-- Understanding how Heroku works
-
-**This template will:**
-
-- Reduce the time it takes to start a project by about a minute
-- Give a rough guide on how to organize your code
-- Already jQuery, Underscore and Backbone downloaded.
-- Include a few helpful CSS templates, all of which have links to the original authors.
-
-## Installation
-
-### Run the script
-
-Starting a new Sinatra app with this template requires only the following three commands
-in your friendly Terminal:
-
-    mkdir NAME_OF_YOUR_APP
-    cd NAME_OF_YOUR_APP
-    curl -L https://github.com/stevenklise/Sinatra-Heroku-Template/raw/master/lib/install.sh | sh
-
-### Clone the Repo
-
-If you'd like, you can clone this repository. Optionally replace NAME_OF_YOUR_APP with,
-well, the name of your app or leave it out to clone into Sinatra-Heroku-Template
-
-    git clone https://github.com/stevenklise/Sinatra-Heroku-Template.git NAME_OF_YOUR_APP
-
-If you go this route you will have a git repository in the folder with all of the project's
-history as well as the shell script to install this template with. It's your call, I use the
-first method myself.
-
-## Local development
+    $ cd PLACE_YOU_DOWNLOADED_AND_UNZIPPED_THIS_REPOSITORY
 
 ### Creating the bundle
 
@@ -98,13 +53,11 @@ Once this returns successfully, push your app to Heroku.
 
     git push heroku master
 
-BOOM. Web 3.0beta
-
 ### TIMEZONES
 
-Heroku's servers have different timestamps than your time zone probably. To have Heroku use your 
-local time zone for timestamps on datamodels find your timezone on this chart: 
-http://en.wikipedia.org/wiki/List_of_tz_database_time_zones and then run the following in 
+Heroku's servers have different timestamps than your time zone probably. To have Heroku use your
+local time zone for timestamps on datamodels find your timezone on this chart:
+http://en.wikipedia.org/wiki/List_of_tz_database_time_zones and then run the following in
 Terminal:
 
     heroku config:add TZ="____YOURTIMEZONE____"

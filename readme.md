@@ -22,7 +22,6 @@ we need to install a different gem first:
 5. To run the app, use the following command:
 
         $ bundle exec rackup
-
 This command creates a server on your computer running at
 `http://localhost:9292`. Type that in to a web browser on your computer and you
  should see the contents of `views/index.erb`.

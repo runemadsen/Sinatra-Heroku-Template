@@ -1,6 +1,6 @@
 # Sinatra-Heroku Template
 
-## Getting this Working
+## Getting this Working on Your Computer
 
 1. Download this repository and unzip.
 
@@ -11,31 +11,24 @@ your system.
 3. When you have installed RVM, open Terminal and direct the terminal to where
 you downloaded this repository, like so:
 
-    $ cd PLACE_YOU_DOWNLOADED_AND_UNZIPPED_THIS_REPOSITORY
+        $ cd PLACE_YOU_DOWNLOADED_AND_UNZIPPED_THIS_REPOSITORY
 
-### Creating the bundle
+4. Now we must install the gems. Gems are what Ruby calls libraries. To do so
+we need to install a different gem first:
 
-This project tracks its gems with Bundler. If you don't have Bundler installed do so:
+        $ gem install bundler
+        $ bundler install --without production
 
-    gem install bundler
+5. To run the app, use the following command:
 
-This command may require running with `sudo`, but I don't have your computer so try it without
-`sudo` first.
+        $ bundle exec rackup
 
-Then create the bundle. The Gemfile makes use of bundle groups and uses SQLite for development
-and Postgres for deploying to Heroku. The `pg` gem is a native extension and might give trouble
-during installation. To skip over the `pg` gem exclude the production groups like so:
+This command creates a server on your computer running at
+`http://localhost:9292`. Type that in to a web browser on your computer and you
+ should see the contents of `views/index.erb`.
 
-    bundle install --without production
-
-### Launching the app
-
-Heroku runs Sinatra apps with `rackup` so we will to. To prevent any gem conflicts on your system
-use `bundle exec` to only load the gems from your Gemfile.lock:
-
-    bundle exec rackup
-
-Your app should then be running at `http://localhost:9292`.
+6. When you change any code in `app.rb` you'll need to restart the server.
+To stop the server type "CTRL+C" in Terminal. and then repeat step 5.
 
 ## Heroku App Creation
 

@@ -4,16 +4,13 @@
 
 ## Installation
 
-First be sure to have Ruby installed. Then download this template, `cd` to it, and install the gems
+First you have to install Postgres.app and Ruby on your computer. Then download this template, `cd` to it, and install the gems
 
-    $ bundle install
-
-THen install postgres.app and follow the instructions to set up a database for the app.
+	$ bundle install
 
 To run the app locally, install Shotgun and run
 
-		$ gem install shotgun
-    $ shotgun config.ru
+	$ shotgun config.ru
 
 Your app should then be running at `http://localhost:9393`.
 
@@ -21,25 +18,24 @@ Your app should then be running at `http://localhost:9393`.
 
 Heroku relies on [Git](http://devcenter.heroku.com/articles/git) for deploying apps so initialize git for the app.
 
-    $ git init
-    $ git add .
-    $ git commit -m "Initial Commit"
+	$ git init
+	$ git add .
+	$ git commit -m "Initial Commit"
 
 To create a Heroku app, first be sure you are [signed up](https://api.heroku.com/signup). Then type the following in Terminal while inside of the project directory.
 
-    $ heroku create NAME_OF_YOUR_APP
+	$ heroku create NAME_OF_YOUR_APP
 
 Once this returns successfully, push your app to Heroku.
 
-    $ git push heroku master
-
+	$ git push heroku master
 
 ## Heroku Database Creation
 
-If you're using DataMapper with a database, you will need to add a database. Run these commands from the root of your project:
+If you're using DataMapper with a database, you will need to add a database. Run these commands from the root of your project, relacing the last database url with the name logged after the first command.
 
 	$ heroku addons:add heroku-postgresql:dev
-	$ heroku pg:promote [put whatever your big POSTGRES name is here]
+	$ heroku pg:promote [HEROKU_POSTGRESQL_REPLACEME_URL]
 
 Now you've created your database. Now you need to update the tables:
 
